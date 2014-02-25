@@ -1,0 +1,341 @@
+/**
+ * Theme Name: Catarse.me 
+ * Theme URI: http://foxnet.fi
+ * Description: A child theme (LiveWireChild) from LiveWire, but hand-made for Catarse.
+ * Version: 0.1
+ * Author: Sami Keijonen, Luiz Fonseca
+ * Author URI: http://foxnet.fi
+ * Tags: post-formats, sticky-post, theme-options, threaded-comments, translation-ready, one-column, two-columns, flexible-width, left-sidebar, right-sidebar, custom-background, featured-images, blue, white
+ * License: GNU General Public License v2.0
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ * Template: live-wire
+ */
+
+/* Importing the parent theme stylesheet. */
+@import url( '../live-wire/style.css' );
+@import url('http://fonts.googleapis.com/css?family=Lato:300,400,700');
+
+
+p iframe { width: 100% !important; }
+
+.fb-comments, .fb-comments * {width: 100% !important;}
+.fan_box .profileimage, .fan_box .connect_action .name_block { 
+	display: none !important; 
+	visibility: hidden;
+}
+
+body { 
+	border-top: none;
+	font-family: "Arial";
+	font-size: .95em;
+}
+
+p {
+	line-height: 1.6em !important;
+	
+}
+
+.hentry.post {
+	padding: 1em 0;
+	width: 100%;
+	transition: background 0.35s ease-in-out, color 0.25s ease-in-out; 
+    	-moz-transition: background 0.35s ease-in-out, color 0.25s ease-in-out; 
+    	-o-transition: background 0.35s ease-in-out, color 0.25s ease-in-out; 
+    	-webkit-transition: background 0.35s ease-in-out, color 0.25s ease-in-out;
+}
+
+.hentry:hover {
+	background: rgba(232, 83, 151, 0.03);
+}
+
+a, a:visited, a:active {
+	color: #E85397;
+	transition: opacity 0.35s ease-in-out, color 0.25s ease-in-out; 
+    	-moz-transition: opacity 0.35s ease-in-out, color 0.25s ease-in-out; 
+    	-o-transition: opacity 0.35s ease-in-out, color 0.25s ease-in-out; 
+    	-webkit-transition: opacity 0.35s ease-in-out, color 0.25s ease-in-out;
+}
+
+.loop-nav .previous, .loop-nav .next {
+	color: white;
+	background: #E85397;
+	transition: background 0.35s ease-in-out, color 0.25s ease-in-out; 
+    	-moz-transition: background 0.35s ease-in-out, color 0.25s ease-in-out; 
+    	-o-transition: background 0.35s ease-in-out, color 0.25s ease-in-out; 
+    	-webkit-transition: background 0.35s ease-in-out, color 0.25s ease-in-out;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: "Lato";
+	text-transform: none;
+}
+
+a:hover {
+	color: #666;
+}
+
+body, #header {
+	border-bottom: none !important;
+}
+
+#header {
+	padding: 1em 0 3em 0;
+	border-top: none !important;
+	background: none
+}
+
+.layout-2c-l #content, .layout-default #content { width: 74%; }
+.layout-2c-l #sidebar-primary, .layout-default #sidebar-primary { width: 22%; }
+
+#main .wrap { border: 1px solid #dedede; }
+
+#header .wrap {
+	background: none;
+}
+
+#site-title a:hover {
+	text-decoration: none;
+	text-shadow: 0 0 5px rgba(232, 83, 151, 0.4);
+}
+
+#site-title * { color: #333 }
+
+#site-title, .post-title { 
+	font-family: "Lato";
+	font-weight: bold;
+	text-transform: capitalize;
+}
+
+.comments-link { display: none }
+.tw_button { margin-right: -8px !important; margin-top: 2px; }
+
+.menu-item a { font-family: "Lato" !important; text-transform: lowercase !important; font-size: .9em !important; color: #333 !important }
+.menu-item a:hover { color: #333 !important; text-decoration: underline !important }
+
+.post-title {
+	text-transform: none;
+}
+
+.pagination .page-numbers { background: #E85397 !important;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+ } 
+
+.post-title, .entry-title {
+	margin-bottom: 0em !important;
+}
+
+.byline, .category {
+	font-family: "Arial";
+	color: #999;
+	font-size: .8em;
+}
+
+.category {
+	float: right;	 
+}
+
+
+#site-title { 	background: url('./images/bg_site_title.png') no-repeat center top; }
+#site-title a {
+	padding: .12em 2.5em; 
+	display: inline-block;
+	text-indent: -9999px;
+}
+
+.jcarousel-skin-default {
+	background: none;
+}
+
+#smooth_slider { 
+	width: 80% !important;
+	height: auto !important; 
+	max-height: 210px; 
+	background: #333! important;
+	border: none !important; 
+
+}
+
+#smooth_slider * { 
+	color: #fff !important; 
+	font-family: "Lato" !important;
+}
+
+#smooth_slider h2 { font-size: 1.4em; line-height: normal; padding-top: .5em; }
+#smooth_slider h2 a:hover { color: #E85397 !important; }
+
+#smooth_slider img.slider_thumbnail { 
+	width: 45% !important; 
+	height: auto !important; 
+	
+	margin-right: 2em; 
+
+	
+}
+#smooth_slider span { 
+	line-height: 1.6em;
+	width: 95% !important; 
+	display: block; 
+	font-size: 100%; 
+	color: #c7c7c7 !important;
+	margin-top: 1em;
+	margin-bottom: 2%;
+ }
+.jcarousel-prev-disabled { opacity: 0.6 }
+
+#smooth_slider .more { margin: .7em auto; width: 90%;}
+
+#smooth_slider .more a { font-size: 96%; 
+	color: #E85397 !important;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	opacity: .9;
+ }
+
+#smooth_slider .more a:hover { opacity: 1; text-decoration: underline !important; }
+
+.jcarousel-clip { width: 100% !important; }
+
+#branding {
+	width: 100%;
+	text-align: center;
+}
+
+#site-description { 
+	font-family: "Lato";
+	font-weight: 300;
+	font-style: normal;
+	font-size: 1em;
+	color: #333;
+	margin-right: -12em;
+	margin-top: -1em;
+}
+
+#menu-secondary div.menu { 
+	background: none;
+}
+
+#menu-secondary li a { color: #666 }
+
+#menu-secondary li a:hover {
+	cursor: pointer;
+}
+	
+
+#menu-secondary li.current-menu-item a {
+	background: #E85397 !important;
+	color: white !important;
+}
+
+.entry-content {
+	margin-top: 2em;
+}
+
+.comments-closed, .pings-open {
+	display: none;
+}
+
+
+.fb_header { font-weight: bold; font-size: 1.6em; margin: 2em 0 .5em 0; font-family: "Lato"; }
+
+#sidebar-primary .widget {
+	border: none;
+}
+
+
+#sidebar-primary .widget form input {
+	color: #999;
+	background: #fff;
+}
+
+#footer {
+	background: none;
+	margin-top: 3em;
+	margin-bottom: 3em;
+
+}
+
+#footer .wrap {
+	background: #333;
+	padding-bottom: 1em;
+	overflow: hidden;
+
+}
+
+.wrap, #smooth_slider { 
+
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+
+}
+
+#footer #footer-info { float: none !important; width: 100% !important }
+#footer .footer_infos { display: inline-block; width: 40%; margin-right: 4em; float: left}
+#footer .footer_social { display: inline-block; width: 50%;  }
+
+form .email { width: 70%; display: inline-block; margin-right: .2em }
+form .submit { width: 15%; display: inline; }
+.clearfix { clear: both; }
+
+#footer .footer_infos h4, #footer .footer_social h4 {
+	margin-top: 1em;
+	color: #E85397;
+	font-size: 1.4em;
+	background: url('./images/sprite_icons.png') no-repeat -20px -80px;
+	text-indent: 30px;
+}
+
+#footer .footer_social h4 { background-position: -20px -818px }
+#footer .footer_social h3 { margin: 1em 0 0 0; padding: 1em 0 0 0; }
+#footer .footer_social .submit { background: #E85397 }
+
+#footer .footer_infos ul { padding-left: 1.8em; }
+#footer .footer_infos ul li { list-style-type: circle;  }
+#footer .footer_infos ul li a { font-size: 1.2em; color: #fff; }
+#footer .footer_infos ul li a:hover { text-decoration: underline; color: #E85397 }
+.widget-categories h3, .widget-search h3, .widget-widget_cardoza_fb_like h3, .widget-widget_twitter_vjck h3 { 
+	background: url('./images/sprite_icons.png') no-repeat -22px -12px;
+	text-indent: 30px;
+}
+
+.widget-categories ul.categories, .widget-widget_twitter_vjck ul { margin-left: 0; padding-left: 2px; }
+
+
+.widget-widget_twitter_vjck h3 { background-position: -20px -602px }
+.widget-widget_twitter_vjck #twitter_time_line, .widget-tags { opacity: .8 }
+.widget-widget_twitter_vjck #twitter_time_line:hover, .widget-tags:hover { opacity: 1 }
+
+.widget-categories ul.categories li {
+	list-style-type: none;
+	background: #F0F0F0;
+	margin: 0;
+	padding: 2px 0 0 4px;
+	font-size: .9em;
+	margin-bottom: 2px;
+}
+
+.widget-categories ul.categories li a { color: #333; padding: 0 6em 0 .1em; }
+
+.widget-categories ul.categories li:hover {
+	background: #e7e7e7;
+}
+
+.widget-categories h3 {
+	background-position: -20px -157px;
+}
+
+.widget-widget_cardoza_fb_like h3 {
+	background-position: -20px -222px;
+}
+ 
+
+@media all and (max-width: 700px) {
+.jcarousel-skin-default { display: none; }
+#site-title { font-size: 3em !important }
+.layout-2c-l #content, .layout-default #content { width: 100%; }
+.layout-2c-l #sidebar-primary, .layout-default #sidebar-primary { display: none }
+.thumbnail, .live-wire-thumbnail { width: 100%; max-width: 100%; max-height: 100%; float: none; }
+}
