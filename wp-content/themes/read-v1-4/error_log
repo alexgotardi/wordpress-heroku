@@ -1,0 +1,1 @@
+[05-Feb-2014 12:41:13] PHP Fatal error:  Call to undefined function  get_option() in /home/catarse/public_html/blog/wp-content/themes/read-v1-4/index.php on line 2
