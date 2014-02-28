@@ -175,7 +175,7 @@
 		}
 		else
 		{
-			$sql = "SELECT CURRVAL('$seq')";
+			$sql = "SELECT last_value FROM \"$seq\"";
 			
 			$res = pg_query($sql);
 			if( false !== $res)
