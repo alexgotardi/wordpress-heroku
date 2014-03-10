@@ -51,6 +51,7 @@ if ( ! current_user_can( 'upload_files' ) ) {
 // just fetch the detail form for that attachment
 if ( isset($_REQUEST['attachment_id']) && ($id = intval($_REQUEST['attachment_id'])) && $_REQUEST['fetch'] ) {
 	$post = get_post( $id );
+  echo var_dump($post);
 	if ( 'attachment' != $post->post_type )
 		wp_die( __( 'Unknown post type.' ) );
 	if ( ! current_user_can( 'edit_post', $id ) )
