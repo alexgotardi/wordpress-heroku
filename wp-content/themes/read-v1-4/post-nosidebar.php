@@ -42,6 +42,7 @@
 											get_template_part( 'part', 'share' );
 										}
 									?>
+    <a href="http://blog.catarse.me/feed/"  style="margin-left:15px;"><img alt="RSS Feed"  src="http://catarse-blog.s3.amazonaws.com/2014/07/icone-e-text-final-feed.png"  title="Assine nosso feed" width="75" height="17"/></a>
 									
 									<?php
 										edit_post_link( __( 'Edit', 'read' ), '<span class="edit-link" style="margin-top: 8px;">', '</span>' );
